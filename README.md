@@ -8,6 +8,7 @@ Discover your firewall UDP output policy with this app.
  * This is absolutely not secure
  * Only one client at a time can use the server
  * If a client does not close a port, the port will not be closed
+ * Use it on a server without any service listening on UDP. Or cross fingers...
 
 ## Usage
 
