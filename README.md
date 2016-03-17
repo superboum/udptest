@@ -9,13 +9,14 @@ Discover your firewall UDP output policy with this app.
  * Only one client at a time can use the server
  * If a client does not close a port, the port will not be closed
  * Use it on a server without any service listening on UDP. Or cross fingers...
+ * Use it on a server without any service listenging on TCP port 80 (like nginx or apache).
 
 ## Usage
 
-On server : `sudo ./server.go`
+On your server : `sudo ./server.go`
 
-On client : `./client`  
-Client will ask for server IP and Port. Default port is 80.
+On your client : `./client`  
+Client will interactively ask for server IP and Port. Default port for server is 80 (so you don't need to reverse proxy it and is available anywhere).
 
 A full log will be available in `port-checker.txt`
 
