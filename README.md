@@ -13,7 +13,7 @@ Discover your firewall UDP output policy with this app.
 
 ## Usage
 
-On your server : `sudo ./server.go`
+On your server : `sudo ./server`
 
 On your client : `./client`  
 Client will interactively ask for server IP and Port. Default port for server is 80 (so you don't need to reverse proxy it and is available anywhere).
