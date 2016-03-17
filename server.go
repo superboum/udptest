@@ -64,5 +64,5 @@ func portHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	connections = make(map[string]*net.UDPConn, 1)
 	http.HandleFunc("/port", portHandler)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":80", nil)
 }

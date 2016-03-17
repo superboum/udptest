@@ -20,6 +20,7 @@ var (
 
 func udpTest(Conn *net.UDPConn) bool {
 	buf := make([]byte, 1024)
+
 	Conn.SetReadDeadline(time.Now().Add(1 * time.Second))
 	Conn.Write([]byte("TEST"))
 	n, _, _ := Conn.ReadFromUDP(buf)
