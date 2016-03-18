@@ -54,7 +54,7 @@ func req(method string, url string, pt PortTest) error {
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
-	defer resp.Body.Close()
+	//defer resp.Body.Close()
 	return err
 
 }
