@@ -53,7 +53,7 @@ func req(method string, url string, pt PortTest) error {
 	req.Header.Set("Content-Type", "application/json")
 
 	client := &http.Client{}
-	resp, err := client.Do(req)
+	_, err = client.Do(req)
 	//defer resp.Body.Close()
 	return err
 
